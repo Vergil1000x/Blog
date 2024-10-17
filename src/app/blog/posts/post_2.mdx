@@ -1,0 +1,141 @@
+---
+
+title: "Integrating Spline and PWA in Next.js"
+date: "17/10/2024"
+summary: "Enhance your Next.js app with Spline 3D models and PWA capabilities!"
+
+---
+
+# Welcome to My Next.js Journey! [Check It!](https://spline-pwa.vercel.app/) 🚀
+
+Hello, fellow developers! I’m excited to share my latest adventure in building a Next.js application that integrates **Spline 3D models** and offers **Progressive Web App (PWA)** capabilities. Let's dive into how I accomplished this!
+
+## Why Use Spline and PWA?
+
+**Spline** allows you to create stunning 3D designs effortlessly, making your application visually appealing. On the other hand, making your app a **PWA** enables users to install it on their devices, providing a native-like experience with offline capabilities and better performance.
+
+## Getting Started with Next.js
+
+If you're new to Next.js, it's a powerful React framework that simplifies building web applications. Here’s how I set up my project with Spline and PWA features:
+
+### Step-by-Step Setup
+
+1. **Create a New Next.js App**:
+
+   ```bash
+   npx create-next-app@latest my-spline-pwa
+   ```
+
+2. **Add Dependencies for Spline and PWA**:
+
+   ```bash
+   npm install @spline/next @next/pwa
+   ```
+
+3. **Configure PWA Support**: Update your `next.config.js` to enable PWA features. Here’s how I did it:
+
+   ```javascript
+   const withPWA = require("next-pwa")({
+     dest: "public",
+     register: true,
+     skipWaiting: true,
+   });
+
+   module.exports = withPWA({
+     reactStrictMode: true,
+     // Other Next.js config options
+   });
+   ```
+
+4. **Project Structure**: Here’s how my project structure looks:
+
+   ```bash
+   my-spline-pwa
+   ├── public                 # Public assets (e.g., images, favicon)
+   ├── src
+   │   ├── app               # Application routes and pages
+   │   │   ├── components     # Reusable components
+   │   │   │   ├── InstallPrompt.tsx # PWA install prompt
+   │   │   │   └── SplineModel.tsx   # Spline model component
+   │   │   ├── favicon.ico     # Favicon
+   │   │   ├── globals.css      # Global styles
+   │   │   ├── layout.tsx       # Main layout component
+   │   │   ├── loading.tsx      # Loading state component
+   │   │   └── page.tsx         # Main entry page
+   │   ├── offline              # Offline page
+   │   │   └── page.tsx        # Offline content
+   ├── next.config.js         # Next.js configuration
+   ├── package.json            # Project metadata and dependencies
+   └── README.md               # Project documentation
+   ```
+
+With these steps, I have a fully functional Next.js application that integrates Spline and is configured as a PWA!
+
+## Tips for Using Spline and PWA 🛠️
+
+- **Experiment with 3D Models**: Don’t hesitate to play around with different Spline models in your app! You can import and render them easily using the `SplineModel` component.
+- **PWA Best Practices**: Make sure to test your PWA features in different browsers and devices. Use tools like Lighthouse to check performance and PWA compliance.
+
+---
+
+## How to Set Up Your Own Spline-PWA Project 📦
+
+To get started with my project setup, follow these steps:
+
+### Step 1: Clone the Repository
+
+Clone the repository to your local machine using Git:
+
+```bash
+git clone https://github.com/Vergil1000x/SplinePWA.git
+```
+
+### Step 2: Navigate to the Project Directory
+
+Change into the project directory:
+
+```bash
+cd my-spline-pwa
+```
+
+### Step 3: Install Dependencies
+
+Install the necessary dependencies:
+
+```bash
+npm install
+```
+
+### Step 4: Run the Development Server
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+### Step 5: Access the Application
+
+Once the server is running, open your browser and navigate to:
+
+```bash
+http://localhost:3000
+```
+
+You should see your Next.js app with Spline models and PWA capabilities!
+
+### Additional Notes
+
+- Ensure you have [Node.js](https://nodejs.org/) installed on your machine. It’s required to run Next.js applications.
+
+- If you encounter any issues, check for error messages in the terminal or consult the documentation for the relevant packages or frameworks.
+
+---
+
+## Let’s Connect!
+
+I’d love for you to join me on this journey! Explore the source code for this project on [GitHub](https://github.com/your-username/my-spline-pwa), and let’s learn together!
+
+Thank you for reading, and happy coding! ✨
+
+---
