@@ -10,7 +10,7 @@ export default function Home() {
           Are you ready to elevate your web development game? Dive into a world
           of Next.js templates that can streamline your projects, enhance your
           blogging experience, and create stunning components with ease. Whether
-          you%apos;re a seasoned developer or just starting out, there%apos;s something
+          you&apos;re a seasoned developer or just starting out, there&apos;s something
           here for everyone.
         </p>
         <p className="px-7 pt-4">
@@ -23,7 +23,7 @@ export default function Home() {
         <p className="px-7 pt-4">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           Ready to get started? Check out our latest templates, tutorials, and
-          tips that will empower you to create amazing web applications. Let%apos;s
+          tips that will empower you to create amazing web applications. Let&apos;s
           transform your ideas into reality!
         </p>
       </div>
